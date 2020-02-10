@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <!-- ***** タイトルを変更 ***** -->
+    <title>体重管理アプリ</title>
+  <!-- ***** 以上を編集 ***** -->
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+  <!-- ***** 以下を追加 ***** -->
+  <!-- 表示をスマートフォンに対応させる -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- ***** 以上を追加 ***** -->
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <!-- ***** 本文を編集 ***** -->
+  <!-- 全ページの横幅に上限を設ける（cssは後に追加） -->
+    <div class="graph-container">
+    <%= yield %>
+    </div>
+  <!-- ***** 以上を編集 ***** -->
+  </body>
+
+</html>
